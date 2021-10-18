@@ -32,7 +32,7 @@ namespace ECommerce.Test.CoreTests
 
             // Assert
             mockDataProvider.Verify(x => x.GetGamesAsync(It.IsAny<FilterModel>()), Times.Once);
-            Assert.Equal(_games.First().gameID, resulGames.First().gameID);
+            Assert.Equal(_games.First().GameID, resulGames.First().GameID);
             Assert.Equal(_games.Count(), resulGames.Count());
         }
 

@@ -7,40 +7,40 @@ namespace ECommerce.Core.Entities
     public class Game : IGame
     {
         [JsonProperty]
-        public string internalName { get; set; }
+        public string InternalName { get; set; }
         [JsonProperty]
-        public string title { get; set; }
+        public string Title { get; set; }
         [JsonProperty]
-        public string metacriticLink { get; set; }
+        public string MetacriticLink { get; set; }
         [JsonProperty]
-        public string dealID { get; set; }
+        public string DealID { get; set; }
         [JsonProperty]
-        public int storeID { get; set; }
+        public int StoreID { get; set; }
         [JsonProperty]
-        public int gameID { get; set; }
+        public int GameID { get; set; }
         [JsonProperty]
-        public float salePrice { get; set; }
+        public float SalePrice { get; set; }
         [JsonProperty]
-        public float normalPrice { get; set; }
+        public float NormalPrice { get; set; }
         [JsonProperty]
-        public float savings { get; set; }
+        public float Savings { get; set; }
         [JsonProperty]
-        public int metacriticScore { get; set; }
+        public int MetacriticScore { get; set; }
         [JsonProperty]
-        public string steamRatingText { get; set; }
+        public string SteamRatingText { get; set; }
         [JsonProperty]
-        public int steamRatingPercent { get; set; }
+        public int SteamRatingPercent { get; set; }
         [JsonProperty]
-        public int steamRatingCount { get; set; }
+        public int SteamRatingCount { get; set; }
         [JsonProperty]
-        public string steamAppID { get; set; }
+        public string SteamAppID { get; set; }
         [JsonProperty]
-        public int releaseDate { get; set; }
+        public int ReleaseDate { get; set; }
         [JsonProperty]
-        public int lastChange { get; set; }
+        public int LastChange { get; set; }
         [JsonProperty]
-        public float dealRating { get; set; }
+        public float DealRating { get; set; }
         [JsonProperty]
-        public string thumb { get; set; }
+        public string Thumb { get; set; }
     }
 }

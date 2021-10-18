@@ -6,23 +6,23 @@ namespace ECommerce.Core.Entities.Interfaces
 {
     public interface IGame
     {
-        public string internalName { get; set; }
-        public string title { get; set; }
-        public string metacriticLink { get; set; }
-        public string dealID { get; set; }
-        public int storeID { get; set; }
-        public int gameID { get; set; }
-        public float salePrice { get; set; }
-        public float normalPrice { get; set; }
-        public float savings { get; set; }
-        public int metacriticScore { get; set; }
-        public string steamRatingText { get; set; }
-        public int steamRatingPercent { get; set; }
-        public int steamRatingCount { get; set; }
-        public string steamAppID { get; set; }
-        public int releaseDate { get; set; }
-        public int lastChange { get; set; }
-        public float dealRating { get; set; }
-        public string thumb { get; set; }
+        public string InternalName { get; set; }
+        public string Title { get; set; }
+        public string MetacriticLink { get; set; }
+        public string DealID { get; set; }
+        public int StoreID { get; set; }
+        public int GameID { get; set; }
+        public float SalePrice { get; set; }
+        public float NormalPrice { get; set; }
+        public float Savings { get; set; }
+        public int MetacriticScore { get; set; }
+        public string SteamRatingText { get; set; }
+        public int SteamRatingPercent { get; set; }
+        public int SteamRatingCount { get; set; }
+        public string SteamAppID { get; set; }
+        public int ReleaseDate { get; set; }
+        public int LastChange { get; set; }
+        public float DealRating { get; set; }
+        public string Thumb { get; set; }
     }
 }

@@ -30,16 +30,16 @@ namespace ECommerce.Data.Providers
             var filteredGames = new List<Game>((List<Game>)_games);
 
             if (condition.MinPriceFilter.filterCriteria == FilterConstants.LESS_THAN)
-                filteredGames = filteredGames.Where(game => game.salePrice > float.Parse(condition.MinPriceFilter.amount)).ToList();
+                filteredGames = filteredGames.Where(game => game.SalePrice > float.Parse(condition.MinPriceFilter.amount)).ToList();
 
             if (condition.MaxPriceFilter.filterCriteria == FilterConstants.GRATER_THAN)
-                filteredGames = filteredGames.Where(game => game.salePrice < float.Parse(condition.MaxPriceFilter.amount)).ToList();
+                filteredGames = filteredGames.Where(game => game.SalePrice < float.Parse(condition.MaxPriceFilter.amount)).ToList();
 
             if(condition.TitleFilter.FilterCase == FilterConstants.CONTAINS)
-                filteredGames = filteredGames.Where(game => game.title.Contains(condition.TitleFilter.SearchValue, StringComparison.OrdinalIgnoreCase)).ToList();
+                filteredGames = filteredGames.Where(game => game.Title.Contains(condition.TitleFilter.SearchValue, StringComparison.OrdinalIgnoreCase)).ToList();
 
             if (condition.TitleFilter.FilterCase == FilterConstants.EQUALS)
-                filteredGames = filteredGames.Where(game => game.title == condition.TitleFilter.SearchValue.Trim()).ToList();
+                filteredGames = filteredGames.Where(game => game.Title == condition.TitleFilter.SearchValue.Trim()).ToList();
 
             return filteredGames;
         }

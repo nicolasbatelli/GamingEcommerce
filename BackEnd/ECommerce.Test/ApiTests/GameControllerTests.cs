@@ -42,7 +42,7 @@ namespace ECommerce.Test
             // Assert
             var resultObject = GetObjectResultContent<IEnumerable<GameDealModel>>(actionResult);
             Assert.NotNull(resultObject);
-            Assert.Equal(resultObject.First().gameID, _dealGames.First().gameID);
+            Assert.Equal(resultObject.First().GameID, _dealGames.First().GameID);
             Assert.Equal(resultObject.Count(), _dealGames.Count());
         }
 
