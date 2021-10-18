@@ -14,12 +14,12 @@ namespace ECommerce.Api.Controllers
     [Route("api/[controller]")]
     public class DealsController : ControllerBase
     {
-        private readonly IGamesManager _usersManager;
+        private readonly IGamesManager _gamesManager;
         private readonly IMapper _mapper;
 
         public DealsController(IGamesManager usersManager, IMapper mapper)
         {
-            _usersManager = usersManager;
+            _gamesManager = usersManager;
             _mapper = mapper;
         }
 
@@ -28,7 +28,7 @@ namespace ECommerce.Api.Controllers
         {
             try
             {
-                var resultItems = await _usersManager.GetGamesAsync(filterConditions);
+                var resultItems = await _gamesManager.GetGamesAsync(filterConditions);
                 return Ok(_mapper.Map<IEnumerable<GameDealModel>>(resultItems));
             }
             catch(Exception ex)
