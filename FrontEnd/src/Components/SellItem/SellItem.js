@@ -23,8 +23,10 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonStyle: {
         background: "linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%)",
+        position: 'realtive',
         marginLeft: 'auto',
         marginRight: 'auto',
+        bottom: 10,
         width: '100%',
         borderRadius: "10px",
     },
