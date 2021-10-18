@@ -32,9 +32,3 @@ string “title : call of”
 
 	 Cuando el filtro sea inválido (por no usar el operador adecuado), por ejemplo
 “title > 50” se deberá retornar un Array vacío desde la RestAPI.
-
-FrontEnd:
-
-Instalar node
-Dentro de la carpeta "FrontEnd" correr npm install
-Correr npm start y la applicacion comenzara a correr
