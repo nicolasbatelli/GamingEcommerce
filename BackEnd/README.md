@@ -1,4 +1,4 @@
-# Simple Gameming Ecommerce Application
+# Simple Gaming Ecommerce Application
 
 Back End:
 
